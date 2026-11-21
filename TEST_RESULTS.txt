@@ -1,0 +1,35 @@
+Verification environment: Windows, Python 3.13.1, Pillow 12.3.0, Stegano 3.0.0.
+Checks include actual PNG save/reopen/extract and an interactive menu run.
+Windows launcher: fresh local environment creation, dependency installation,
+menu startup, and normal exit all completed successfully.
+
+test_ascii (__main__.ProjectChecks.test_ascii) ... ok
+test_bad_files_and_destination (__main__.ProjectChecks.test_bad_files_and_destination) ... ok
+test_comparison_preview (__main__.ProjectChecks.test_comparison_preview) ... ok
+test_corrupt_message_marker (__main__.ProjectChecks.test_corrupt_message_marker) ... ok
+test_empty_message (__main__.ProjectChecks.test_empty_message) ... ok
+test_exact_capacity_and_too_large (__main__.ProjectChecks.test_exact_capacity_and_too_large) ... ok
+test_included_example (__main__.ProjectChecks.test_included_example) ... ok
+test_interactive_workflow (__main__.ProjectChecks.test_interactive_workflow) ... ok
+test_jpeg_with_rotation (__main__.ProjectChecks.test_jpeg_with_rotation) ... ok
+test_no_message (__main__.ProjectChecks.test_no_message) ... ok
+test_protect_existing_files (__main__.ProjectChecks.test_protect_existing_files) ... ok
+test_psnr_known_values (__main__.ProjectChecks.test_psnr_known_values) ... ok
+test_supported_modes (__main__.ProjectChecks.test_supported_modes) ... ok
+test_transparent_preview (__main__.ProjectChecks.test_transparent_preview) ... ok
+test_unicode_and_exact_whitespace (__main__.ProjectChecks.test_unicode_and_exact_whitespace) ... ok
+test_unicode_capacity (__main__.ProjectChecks.test_unicode_capacity) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.115s
+
+OK
+
+Included sample:
+Message: Meet me at the library at 5 PM.
+Image dimensions: 640 x 400
+Message length: 31 UTF-8 bytes
+MSE: 0.00017578125
+PSNR: 85.68107812404418 dB
+Extracted message exactly matches the original.
+The original image file is unchanged.
